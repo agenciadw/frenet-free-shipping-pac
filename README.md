@@ -65,7 +65,7 @@ Aceita formatos com ou sem hífen: `99999-999` ou `99999999`.
 == Screenshots ==
 
 1. **Configurações**  
-   ![Configurações]([/assets/screenshot-1.jpg)
+   ![Configurações](/assets/screenshot-1.jpg)
 2. **Checkout com prazo**  
    ![Checkout](/assets/screenshot-2.jpg)
 
