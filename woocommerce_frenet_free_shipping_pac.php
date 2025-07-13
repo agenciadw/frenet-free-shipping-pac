@@ -4,7 +4,7 @@
  * Description: Integra o PAC da Frenet ao Frete Grátis do WooCommerce, exibindo prazo de entrega em dias úteis, sem ocultar outros métodos de envio.
  * Version: 1.1.0
  * Requires PHP: 7.6
- * Requires at least: 5.0
+ * Requires at least: 6.6
  * Author: David William da Costa
  * Text Domain: frenet-free-shipping-pac
  * License: GPL v2 or later
