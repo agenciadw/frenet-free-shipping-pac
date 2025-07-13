@@ -1,12 +1,10 @@
 <?php
 /**
-  * Plugin Name: Frenet Free Shipping PAC
+ * Plugin Name: Frenet Free Shipping PAC
  * Description: Integra o PAC da Frenet ao Frete Grátis do WooCommerce, exibindo prazo de entrega em dias úteis, sem ocultar outros métodos de envio.
- * Version: 1.0
+ * Version: 1.1.0
  * Requires PHP: 7.6
- * Requires at least: 6.6
- * WC tested up to: 9.8.5
- * Tested up to: 7.6
+ * Requires at least: 5.0
  * Author: David William da Costa
  * Text Domain: frenet-free-shipping-pac
  * License: GPL v2 or later
@@ -15,6 +13,14 @@
 
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
+}
+
+// Adiciona link "Settings" na listagem de plugins
+add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'frenet_free_shipping_action_links' );
+function frenet_free_shipping_action_links( $links ) {
+    $settings_link = '<a href="' . esc_url( admin_url( 'admin.php?page=wc-settings&tab=shipping&section=options' ) ) . '">' . esc_html__( 'Configurações', 'frenet-free-shipping-pac' ) . '</a>';
+    array_unshift( $links, $settings_link );
+    return $links;
 }
 
 /**
