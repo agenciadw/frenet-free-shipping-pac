@@ -41,9 +41,14 @@ Este plugin integra o serviço PAC da Frenet ao método de Frete Grátis do WooC
 
 == Changelog ==
 
+= 1.1.1 =
+
+- Adicionado links “Documentação e Visitar o site do plugin” na listagem de plugins (Plugin → Settings).
+- Mantém todas as funcionalidades da versão 1.1.
+
 = 1.1.0 =
 
-- Adicionado link “Settings” na listagem de plugins (Plugin → Settings).
+- Adicionado link “Configuração” na listagem de plugins (Plugin → Settings).
 - Mantém todas as funcionalidades da versão 1.0.
 
 = 1.0 =
