@@ -70,4 +70,4 @@ Aceita formatos com ou sem hífen: `99999-999` ou `99999999`.
    ![Checkout](/assets/screenshot-2.jpg)
 
 == Support ==
-Abra uma issue em https://github.com/agenciadw/woocommerce-frenet-free-shipping-pac ou contate o autor para dúvidas e sugestões.
+Abra uma issue em https://github.com/agenciadw/frenet-free-shipping-pac ou contate o autor para dúvidas e sugestões.
