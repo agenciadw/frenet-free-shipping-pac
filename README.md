@@ -1,10 +1,10 @@
 === Frenet Free Shipping PAC ===
 Contributors: David William da Costa  
 Tags: shipping, delivery, frete, frenet  
-Requires at least: 5.0  
+Requires at least: 6.6
 Tested up to: 7.6  
 Requires PHP: 7.6  
-Stable tag: 1.0  
+Stable tag: 1.1.1
 License: GPLv2 or later  
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,6 +40,17 @@ Este plugin integra o serviço PAC da Frenet ao método de Frete Grátis do WooC
 3. Todos os outros métodos de envio continuam visíveis normalmente.
 
 == Changelog ==
+
+= 1.1.1 =
+
+- Adicionado links “Documentação e Visitar o site do plugin” na listagem de plugins (Plugin → Settings).
+- Mantém todas as funcionalidades da versão 1.1.
+
+= 1.1.0 =
+
+- Adicionado link “Configuração” na listagem de plugins (Plugin → Settings).
+- Mantém todas as funcionalidades da versão 1.0.
+
 = 1.0 =
 
 - Versão inicial completa integrando o PAC da Frenet com o Frete Grátis.

@@ -1,13 +1,12 @@
 <?php
 /**
-  * Plugin Name: Frenet Free Shipping PAC
+ * Plugin Name: Frenet Free Shipping PAC
  * Description: Integra o PAC da Frenet ao Frete Grátis do WooCommerce, exibindo prazo de entrega em dias úteis, sem ocultar outros métodos de envio.
- * Version: 1.0
+ * Version: 1.1.1
  * Requires PHP: 7.6
  * Requires at least: 6.6
- * WC tested up to: 9.8.5
- * Tested up to: 7.6
  * Author: David William da Costa
+ * Author URI: https://github.com/agenciadw
  * Text Domain: frenet-free-shipping-pac
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -15,6 +14,28 @@
 
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
+}
+
+// Adiciona link "Settings" na listagem de plugins
+add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'frenet_free_shipping_action_links' );
+function frenet_free_shipping_action_links( $links ) {
+    $settings_link = '<a href="' . esc_url( admin_url( 'admin.php?page=wc-settings&tab=shipping&section=options' ) ) . '">' . esc_html__( 'Configurações', 'frenet-free-shipping-pac' ) . '</a>';
+    array_unshift( $links, $settings_link );
+    return $links;
+}
+
+// Adiciona links extras abaixo do nome do plugin
+add_filter( 'plugin_row_meta', 'frenet_free_shipping_row_meta', 10, 2 );
+function frenet_free_shipping_row_meta( $links, $file ) {
+    if ( plugin_basename( __FILE__ ) === $file ) {
+        $custom_links = array(
+            '<a href="https://github.com/agenciadw/frenet-free-shipping-pac/blob/main/README.md" target="_blank" rel="noopener noreferrer">Documentação</a>',
+            '<a href="https://github.com/agenciadw/frenet-free-shipping-pac/tree/main" target="_blank" rel="noopener noreferrer">Visitar o site do plugin</a>',
+        );
+        // Coloca os links personalizados após os padrões
+        return array_merge( $links, $custom_links );
+    }
+    return $links;
 }
 
 /**
