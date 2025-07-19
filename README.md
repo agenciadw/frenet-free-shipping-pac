@@ -1,8 +1,8 @@
 === Frenet Free Shipping PAC ===
-Contributors: David William da Costa  
+Contributors: David William da Costa
 Tags: shipping, delivery, frete, frenet  
 Requires at least: 6.6
-Tested up to: 7.6  
+Tested up to: 6.8
 Requires PHP: 7.6  
 Stable tag: 1.1.1
 License: GPLv2 or later  
@@ -10,6 +10,9 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 Este plugin integra o serviço PAC da Frenet ao método de Frete Grátis do WooCommerce, exibindo o prazo de entrega em dias úteis diretamente no label do Frete Grátis, sem ocultar outros métodos de entrega.
+
+== Short Description ==
+Integra o PAC da Frenet ao método Frete Grátis do WooCommerce, exibindo o prazo de entrega em dias úteis diretamente no rótulo de Frete Grátis, sem ocultar os demais métodos de envio.
 
 == Features ==
 
