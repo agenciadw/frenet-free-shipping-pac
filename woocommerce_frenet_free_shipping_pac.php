@@ -1,13 +1,17 @@
 <?php
 /**
- * Plugin Name: Frenet Free Shipping PAC
+ * Plugin Name: DW Free Shipping PAC with Frenet
+ * Plugin URI: https://github.com/agenciadw/frenet-free-shipping-pac
  * Description: Integra o PAC da Frenet ao Frete Grátis do WooCommerce, exibindo prazo de entrega em dias úteis, sem ocultar outros métodos de envio.
  * Version: 1.1.1
  * Requires PHP: 7.6
  * Requires at least: 6.6
  * Author: David William da Costa
  * Author URI: https://github.com/agenciadw
- * Text Domain: frenet-free-shipping-pac
+ * Text Domain: dw-free-shipping-pac-with-frenet
+ * Domain Path: /languages
+ * WC requires at least: 7.0
+ * WC tested up to: 9.0
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  */

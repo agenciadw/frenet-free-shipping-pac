@@ -1,4 +1,4 @@
-=== Frenet Free Shipping PAC ===
+=== DW Free Shipping PAC with Frenet ===
 Contributors: David William da Costa
 Tags: shipping, delivery, frete, frenet  
 Requires at least: 6.6
